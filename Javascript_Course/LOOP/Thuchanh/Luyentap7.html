@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="color:blue">Hãy viết một chương trình in ra các số từ 1 đến 100. Nhưng nếu số chia hết cho 3 thì in ra “Fizz”,</p>
+    <p style="color:blue">5 thì in ra “Buzz” thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ “FizzBuzz”.</p>
+    <p id="d"></p>
+    <p id="d1"></p>
+</body>
+<script>
+    let F = "Fizz"
+    let B = "Buxx"
+    let FB = F + B
+    let res = null,
+        res1 = null,
+        res2 = null;
+    let i = 0,
+        j = 0,
+        ij = -15;
+        // KET QUA CHIA HET CHO 15
+        while ( ij < 100 ) {
+            ij = ij + 15
+            res2 = ij
+            if ( res2 == 0 ) 
+                document.write(res2 + " ,"  + " la so dac biet chia het cho 3 va 5 nen goi chung la " + ("<span style='color:red'>" + FB + "</span>") + "<br>"
+            + "<hr border='10px' color='red' heigh='5' width='100%'>");
+                if ( res2 - 15 < 0)
+                continue
+                if ( res2 > 100 ) // DIEU KIEN DE THOAT VONG LAP
+                break;
+            document.write(res2 + " ,"  + " chia het cho 3 va 5 nen goi la " + ("<span style='color:red'>" + FB + "</span>") + "<br>"
+            + "<hr border='10px' color='red' heigh='5' width='100%'>");
+            }
+            // KET QUA CHIA HET CHO 5
+            while ( j <= 100 ) {
+                j = j + 5;
+                res1 = j;
+                if ((res1) > 104) // DIEU KIEN DE THOAT VONG LAP 
+                    break;
+                document.write(res1 + " ,"  + " chia het cho 5 nen goi la " + ("<span style='color:red'>" + B + "</span>") + "<br>"
+                + "<hr border='10px' color='blue' heigh='5' width='100%'>");
+                }
+            // KET QUA CHIA HET CHO 3
+                for ( i = 0 ; i < 100 ;  i = i + 3) {
+                res = i + 3;
+                if (res + 3 > 102) // DIEU KIEN DE THOAT VONG LAP
+                    break
+                document.write(res + " ,"  + " chia het cho 3 nen goi la " + ("<span style='color:red'>" + F + "</span>") + "<br>"
+                + "<hr border='10px' color='orange' heigh='5' width='100%'>");
+                }
+</script>
+</html>
