@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+            /* position: fixed; */
+            margin-top: 0;
+            width: 100%;
+            height: 50px;
+        }
+        #header a {
+            float: left;
+            display: block;
+            color: #c25454;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        #google {
+            float: right;
+            padding: 10px, 5px;
+            margin-top: 12px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
+        #main  {
+            background: #e4d3d3;
+            width: 100%;
+            height: 800px;
+            padding-top: 5px;
+        }
+        #main_sidebar {
+            width: 8%;
+            height: 800px;
+            background: #769c97;
+            float: left;
+        }
+        #main_content {
+            width: 71.6%;
+            height: 800px;
+            background: #6e93a5;
+            float: left;
+            margin-left: 0.2%;
+            margin-right: 0.2%;
+        }
+        #main_poster {
+            width:20%;
+            height: 800px;
+            background: #b48ab4;
+            float: left;
+        }
+        #footer {
+            clear: both;
+            background: burlywood;
+            height: 65px;
+            width: 100%;
+            padding-top: 5px;
+            margin-top: 5px;
+            /* position: fixed; */
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="header">
+            <a href="">Home</a>
+            <a href="">News</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+            <a href="">Financy</a>
+        </div>
+        <div id="google">
+                <form class="hover" action="https://www.google.com.vn/search"> 
+                    <input placeholder="Google" type="text" name="q"/>
+                    <input type="submit" value="Tìm kiếm tren Google"/>
+                </form>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main_sidebar">
+            <a href="">Product</a>
+            <a href="">Quality</a>
+        </div>
+        <div id="main_content">
+
+        </div>
+        <div id="main_poster">
+
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+</html>

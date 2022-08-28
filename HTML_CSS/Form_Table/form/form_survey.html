@@ -19,6 +19,10 @@
     th {
     border: 1px solid #dddddd;
     }
+td:hover{
+    background-color: rgb(97, 129, 156);
+    cursor: pointer;
+}
 </style>
 <body>
     <form action="" method="post">
@@ -58,9 +62,9 @@
         <h4>What features would you like to see in the new product.</h4>
             <textarea style="width: 100%;" rows="10"></textarea>
         <h5>Please rate your level of agreement with the following statements.</h5>
-            <table style="border-collapse: collapse ; width: 100%">
+            <table class="aa" style="border-collapse: collapse ; width: 100%">
                 <tr >
-                    <th style="width: 40%"></th> 
+                    <th style="width: 40% ; height: 55px;"></th> 
                     <th style="width: 15%">Strong Disagree <br></th>
                     <th style="width: 15%">Disagree </th>
                     <th style="width: 15%">Argee </th>
@@ -88,6 +92,7 @@
                     <td style="width: 15% ; text-align:center"><input type="radio"> <br> 4 </td>
                 </tr>
             </table>
+            <br>
             <button style="width:5%"><strong>Submit</strong></button>
     </form>
 </body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hinhtron {
+            background: aqua;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 50%;
+            transition: 2s;
+            animation: x 4s ;
+            /* opacity: 0; */
+            /* margin-top: 50%; */
+        }
+        @keyframes x {
+            0% {
+                background: aqua;
+            width: 100px;
+            height: 100px;
+            }
+            25% {
+                background: rgb(28, 29, 29);
+            width: 100px;
+            height: 100px;
+            transform: scale(0.25);
+            }
+            50% {
+                background: rgb(48, 27, 124);
+            width: 100px;
+            height: 100px;
+            transform: scale(0.5);
+            }
+            75% {
+                background: rgb(185, 149, 28);
+            width: 100px;
+            height: 100px;
+            transform: scale(0.75);
+            }
+            100% {
+                background: rgb(168, 28, 150);
+            width: 100px;
+            height: 100px;
+            transform: scale(1);
+            }
+
+        }
+        /* .hinhtron:hover {
+            transform: scale(0.5);
+            background: red;
+            border-radius: 100%;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="hinhtron"></div>
+</body>
+</html>

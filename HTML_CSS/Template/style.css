@@ -1,0 +1,39 @@
+body {
+    background: #edf4fd;
+    font-weight: bold;
+    color: #051a40;
+}
+.logo {
+    width: 140px;
+}
+
+.nav-item {
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.btn {
+
+    border-radius: 7px !important;
+}
+.nav-button {
+    margin-left: 10px;
+}
+
+.nav-button>button {
+    margin-left: 10px;
+}
+.text {
+    font-size: 530%;
+}
+
+.platform {
+    color: rgb(75, 75, 245); 
+    background: white;
+     padding: 5px; 
+}
+
+.lorem {
+    font-weight: lighter;
+    color: rgb(143, 143, 158);
+}

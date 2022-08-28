@@ -1,0 +1,136 @@
+#header {
+    width: 100%;
+    height: 60px;
+    background-color: aquamarine;
+    /* position: fixed; */
+}
+#logo img {
+    height: 50px;
+    width: 5%;
+    float:left;
+    margin-top: 5px;
+    margin-bottom:  5px;
+    margin-left: 5px;
+}
+#header_h1 {
+    float: left;
+    width: 70%;
+    position: fixed;
+    /* top: 30px;
+    bottom: 30px; */
+    left: 400px
+    }
+#google{
+    width: 20%;
+    float:right;
+    position: fixed;
+    top: 30px;
+    bottom: 30px;
+    left : 1000px
+    /* clear: both; */
+}
+#menu{
+    height: 30px;
+    padding-left:20%;
+    margin-top:5px;
+    background-color: #000000;
+    border: 1px solid #CDCDCD;
+
+}
+#menu ul, #menu li{
+    padding:0;
+    margin:0;
+}
+#menu li{
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+#menu li a {
+    width:100%;
+    height: 30px;
+    display: block;
+    text-decoration:none;
+    text-align: center;
+    line-height: 30px;
+    /* background-color: black; */
+    color: white;
+}
+#menu ul li a{
+    width: 220px;
+    text-align: center;
+} 
+#menu ul ul li a{
+    width: 200px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.hidden_1{
+    background-color: rgb(18, 77, 57);
+}
+.hidden_2{
+    background-color: rgb(51, 131, 131);
+}
+.hidden_3 {
+    background-color: rgb(114, 77, 32);
+}
+#menu li a:hover{
+     background-color: red;
+}
+#menu ul ul{
+    position: absolute;
+    top: 30px;
+    /* left: 15px; */
+    visibility: hidden;
+}
+#menu ul li:hover ul{
+    visibility: visible;
+}
+#content {
+    width: 100%;
+    height: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    clear: both;
+}
+#content_left{
+    width: 20.4%;
+    height: 780px;
+    margin-right: 0.2%;
+    float: left;
+}
+#content_left iframe {
+    width: 100%;
+    height: 33%;
+    
+}
+#content_right {
+    width: 79.4%;
+    height: 780px;
+    float:left;
+    background: rgb(194, 180, 180);
+}
+#footer {
+    background: bisque;
+    color: blue;
+    width: 100%;
+    height: 40px; 
+}
+#footer_connection div img{
+    height: 40px;
+    width: 3%;
+    float:left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+    background: #684343;
+}
+#footer_copi {
+    float: left;
+    width: 40%;
+    text-align: center;
+    background: bisque;
+}
