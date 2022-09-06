@@ -1,8 +1,10 @@
 #header{
     width: 100%;
     background: burlywood;
-    margin-bottom: 2px;
     height: 50px;
+    position: fixed;
+    top:0px;
+    float: left;
 }
 #header img{
     height: 50px;
@@ -10,7 +12,8 @@
     background-color: burlywood;
 }
 #content {
-    clear: both;
+    position: relative;
+    top: 50px;
     height: 1500px;
     width: 100%;
 }
@@ -18,6 +21,95 @@
     float: left;
     width: 20%;
     height: 1500px;
+    background-color: rgb(207, 215, 223);
+}
+.sidebar-one {
+    /* position: relative; */
+    padding: 5px 10px;
+    height: 40px;
+    margin: auto;
+}
+.sidebar-one div {
+    /* position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 20px; */
+    height: 40px;
+    width: 100%;
+    color: blueviolet;
+    margin: auto;
+}
+.sidebar-three, .sidebar-four, .sidebar-two {
+    height: 40px;
+    width: 90%;
+    background-color: rgb(183, 238, 238);
+    border-style:outset;
+    margin: 5px auto;
+    position: relative;
+}
+.sidebar-two ul {
+    position: absolute;
+    margin: 5px;
+    padding: 2px 1px;
+}
+.sidebar-two li {
+    display: inline-block;
+    padding-left: 20px;
+}
+.sidebar-five {
+    width: 100%;
+    height: 280px;
+}
+.sidebar-four img, .sidebar-three img {
+    width: 30px;
+    height: 30px;
+    vertical-align: center ;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left:10px
+}
+.sidebar-five nav {
+    height: 40px;
+    width: 90%;
+    position: relative;
+    margin-bottom: 2px ;
+    margin-left: 10px;
+}
+.sidebar-five nav img {
+    width: 30px;
+    height: 30px;
+    vertical-align: center ;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left:10px;
+}
+figure {
+    text-align: left;
+    padding: 7px;
+}
+.sidebar-six {
+    height: 500px;
+    width: 90%;
+    /* background-color: rgb(183, 238, 238); */
+    /* border-style:outset; */
+    margin: 5px auto;
+    position: relative;
+}
+
+.sidebar-six-event {
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+}
+div nav i {
+    float: left;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+div i:hover{
+    color: red;
 }
 #main {
     float: left;
@@ -25,11 +117,8 @@
     height: 1500px;
     overflow: auto;
 }
-
 #main_first {
-    /* background: yellowgreen; */
     margin-top: 5px;
-    /* margin-bottom: 5px; */
     height: 20%;
     text-align: center;
 }
@@ -93,7 +182,7 @@
 }
 #poster_first{
     height: 20%;
-    border-radius: 20%;
+    border-radius: 5%;
     background: rgb(230, 226, 222);
     margin-bottom: 5px;
     text-decoration: solid;
@@ -101,21 +190,21 @@
 }
 #poster_second{
     height: 20%;
-    border-radius: 20%;
+    border-radius: 5%;
     background: rgb(143, 139, 133);
     margin-bottom: 5px;
     padding: 10px;
 }
 #poster_third{
     height: 58%;
-    border-radius: 10%;
+    border-radius: 5%;
     background: rgb(131, 112, 88);
     padding: 10px;
 }
 .friends{
-    background: rgb(119, 96, 99);
+    background: rgb(240, 233, 233);
     margin-bottom: 5px;
     height: 10%;
     width: 100%;
-    border-radius: 15%;
+    border-radius: 0.01%;
 }
