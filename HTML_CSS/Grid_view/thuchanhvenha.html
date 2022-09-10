@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .main {
+            width: 100%;
+            display: flex;
+        }
+        .main > div {
+            width: 24%;
+            flex-direction:  row ;
+            margin: 5px;
+        }
+        img:hover {
+            opacity: 50%;
+        }
+        @media screen and (max-width:768px) {
+            .main {
+                width : 100%
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Gallery</h1>
+    <p>Resize the browser window to see the effect.</p>
+    <div class="main">
+        <div>
+            <img src="img_fjords.jpg" alt="">
+        </div>
+        <div>
+            <img src="img_forest.jpg" alt="">
+        </div>
+        <div>
+            <img src="img_lights.jpg" alt="">
+        </div>
+        <div>
+            <img src="img_mountains.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
