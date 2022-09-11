@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            background-color: black;
+            color: aliceblue;
+            height: 50px;
+        }
+        li {
+            display:inline-block;
+            padding: auto;
+            margin-left: 35px ;
+            margin-top: 15px;
+            font-weight: bolder;
+        }
+        center {
+            margin-top: 5px;
+        }
+        .main {
+            width: 100%;
+            height: 750px;
+            clear: both;
+        }
+        .main .aside {
+            background-color: beige;
+            float: left;
+            padding-top: 20px ;
+            height: 100%;
+            width: 13%;
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            margin-top: 20px;
+            font-weight: bolder;
+        }
+        a:hover, li:hover {
+            background-color: rgb(224, 211, 93);
+        }
+        .article {
+            width: 70%;
+            height: 100%;
+            background-color: aliceblue;
+            text-align: left;
+            padding-left: 5px;
+            float: left;
+            margin-left: 5px;
+        }
+        p::first-letter {
+            color: blue;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+        .ads {
+            width: 16.5%;
+            height: 100%;
+            background-color: beige;
+            float: right;
+        }
+        .ads div {
+            background-color: azure;
+            border: solid 1px;
+            border-style: outset;
+            border-radius: 1%;
+            width: 95%;
+            height: 100px;
+            margin-top: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        footer {
+            height: 50px;
+            width: 100%;
+            clear: both;
+            margin-top: 5px;
+            background-color: rgb(148, 158, 158);
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        footer div {
+            height: 100%;
+            width: 100%;
+            font-weight: bolder;
+            color: blue;
+        }
+        footer div::first-letter {
+            color: rgb(184, 12, 12);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul style="list-style-type: none;">
+                <li>Logo</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+                <li class="menu-login" style="float: right; padding-right: 20px;">
+                    <i class="fa-solid fa-right-to-bracket" style="color: #ffffff">
+                    <a href="" target="_blank">Login</a></i>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <center>
+        <div class="main">
+            <div class="aside">
+                <a href="">News</a>
+                <a href="">Event</a>
+                <a href="">Research</a>
+            </div>
+            <div class="article">
+                <h1>Welcome</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
+                <h2>Test</h2>
+                <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
+            </div>
+            <div class="ads">
+                <div class="ads-content">ADS</div>
+                <div class="ads-content">ADS</div>
+            </div>
+        </div>
+    </center>
+    <footer>
+        <div>
+            Copyright Lorem ipsum
+        </div>
+    </footer>
+    
+
+</body>
+</html>
