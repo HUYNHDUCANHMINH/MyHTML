@@ -1,0 +1,49 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+.container {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(124, 124, 71);
+    /* CSS Flex */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items:center;
+}
+div div {
+    width: 30%;
+}
+.item-1 {
+    background-color: rgb(10, 41, 30);
+    align-self: flex-start;
+}
+.item-2 {
+    background-color: rgb(102, 5, 110);
+    flex-grow: 2;
+
+}
+.item-3 {
+    background-color: cadetblue;
+    flex-grow: 2;
+}
+.item-4 {
+    background-color: rgb(12, 79, 194);
+    flex-shrink: 4;
+    align-self: center;
+}
+.item-5 {
+    background-color: darkgoldenrod;
+    align-self: flex-end;
+}

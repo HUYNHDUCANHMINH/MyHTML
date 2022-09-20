@@ -1,0 +1,212 @@
+* html, body {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-family: "poppins";
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+}
+img:hover, iframe:hover {
+    opacity: 0.5;
+}
+#banner {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 180, 130);
+    margin: 0px 5px;
+    position: fixed;
+}
+.logo {
+    width: 20%;
+    padding-left: 50px;
+}
+
+/* sideNav */
+#sideNav {
+    width: 200px;
+    height: 400px;
+    position: fixed;
+    /* top: 0; */
+    right: -250px;
+    background: rgb(107, 160, 107);
+    z-index: 2;
+    transition: right 0.1s;
+    /* margin-left: 8px; */
+}
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+#leftside-logo {
+    width: 180px;
+    height: 65px;
+    left: 10px;
+    /* background: blueviolet; */
+    /* position: fixed; */
+    top: 250px;
+    position: relative;
+}
+#leftside-logo img{
+    transition: 2s;
+    opacity: 1;
+    transition-delay: 1s;
+}
+#leftside-logo:hover .img2{
+    margin-left: 400px;
+    transform: rotate(360deg);
+    opacity: 0;
+}
+#leftside-logo:hover .img1 {
+    margin-left: 300px;
+    transform: rotate(360deg);
+    opacity: 0;
+}
+#leftside-logo:hover .img3 {
+    margin-left: 500px;
+    transform: rotate(360deg);
+    opacity: 0;
+}
+#leftside-logo:hover .img4 {
+    margin-left: 600px;
+    transform: rotate(360deg);
+    opacity: 0;
+}
+#menubutton {
+    width: 40px;
+    height: 40px;
+    background: rgb(107, 160, 107);
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top:10px;
+    z-index: 3;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+}
+#menubutton img {
+    width: 20px;
+    margin-top: 10px;
+}
+#grid-container {
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 100px min-content 120px 500px 50px 300px;
+    /* background-color: darkkhaki; */
+    grid-row-gap: 10px;
+}
+#grid-container div{
+    padding: 10px 5px;
+    /* height: 320px; */
+    text-align: center;
+}
+button {
+    background-color: rgb(68, 62, 62);
+    height: 50px;
+    color: azure;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.grid-item1 {
+    grid-column: 1/3;
+}
+.grid-item3, .grid-item7, .grid-item11 {
+    grid-column: 1 / 4;
+}
+.grid-item3 h1 {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 40px;
+    background-color: rgb(25, 102, 76);
+}
+.grid-item4, .grid-item5, .grid-item6 {
+    width: 490px;
+    grid-gap: 10px;
+    height: 315px;
+}
+.product {
+    margin-top: 40px;
+    width: 490px;
+    grid-gap: 5px;
+    height: 315px;
+    position: relative;
+}
+.grid-item7 div {
+    height: 120px;
+    background-color: rgb(196, 117, 117);
+    animation-iteration-count: infinite;
+    animation-name: example4;
+    animation-duration: 10s;
+    animation-delay: -2s;
+}
+@keyframes example4 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+.overlay {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    /* background: linear-gradient(rgba(0,0,0,0,5),aqua); */
+    opacity: 0;
+    transition: 1s;
+}
+.product:hover .overlay {
+    opacity: 1;
+}
+.buyitem {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr {
+    background: black;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60px;
+}
+.buyitem p {
+    font-size: 13px;
+    color: rgb(228, 31, 31);
+    font-weight: bolder;
+    height: 150px;
+}
+.buyitem h3 {
+    color: rgb(177, 18, 18);
+}
+.product:hover .buyitem{
+    bottom: 15%;
+    opacity: 1;
+}
+.product:hover a img{
+    opacity: 0.2;
+}
+.testimonial-col {
+    width: 200px;
+}
+.grid-item11 {
+    background-color: aqua;
+}
+
+
+
