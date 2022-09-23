@@ -1,0 +1,32 @@
+#leftside-logo, #rightside-logo {
+    width: 180px;
+    height: 65px;
+    top: 250px;
+    position: relative;
+}
+
+#leftside-logo img{
+    transition: 2s;
+    opacity: 1;
+    transition-delay: 1s;
+}
+#leftside-logo:hover .img2{
+    margin-left: 400px;
+    transform: rotate(360deg);
+    opacity: 0;
+}
+#leftside-logo:hover .img1 {
+    margin-left: 300px;
+    transform: rotate(360deg);
+    opacity: 0;
+}
+#leftside-logo:hover .img3 {
+    margin-left: 500px;
+    transform: rotate(360deg);
+    opacity: 0;
+}
+#leftside-logo:hover .img4 {
+    margin-left: 600px;
+    transform: rotate(360deg);
+    opacity: 0;
+}
