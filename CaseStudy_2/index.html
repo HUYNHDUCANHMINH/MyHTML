@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="menubar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="left_right_logo.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 
 <body>
@@ -69,11 +71,11 @@
     <section id="sideNav">
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Feature</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="">Meet Us</a></li>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#sideNav">Feature</a></li>
+                <li><a href="#feature">Services</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#footer">Meet Us</a></li>
             </ul>
         </nav>
     </section>
@@ -314,6 +316,11 @@
             menu.src = "images/menu.png"
         }
     }
+    // All animations will take exactly 1000ms
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
 </script>
 
 </html>
