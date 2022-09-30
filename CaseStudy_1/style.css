@@ -1,0 +1,14 @@
+#decarbon h1::first-letter  {
+    color: red;
+}
+#decarbon h1::first-letter::after {
+    color: red;
+}
+#img-news {
+    transition: transform .9s;
+    box-shadow: 0 1px 3px 5px #ecec79;
+}
+#img-news:hover {
+    opacity: 0.8;
+    transform: translateY(10px) translateX(10px);
+}
