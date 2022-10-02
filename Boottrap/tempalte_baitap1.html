@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>template practice 1</title>
+  <style>
+    html,
+    body {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(188, 188, 228);
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="template_css.css">
+</head>
+
+<body style="background-color: rgb(188, 188, 228);">
+  <nav class="navbar mx-0 navbar-expand-lg w-100" style="background-color: rgb(188, 188, 228);">
+    <div class="container row w-100 h-100 mx-auto">
+      <div class="col-1 ">
+        <a class="navbar-brand float-start" href="#">
+          <img src="images/online-course-blog-header.jpg" style="width: 30px; height: 30px;" alt=""></a>
+      </div>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+      <div class="collapse navbar-collapse col-8" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 me-0 d-flex">
+          <li class="nav-item d-flex">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link " href="#">Course</a>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link " href="#">Testimonial</a>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-3  ">
+        <form class="d-flex float-end ">
+          <button class="btn btn-outline-success me-5" type="submit">
+            <a href="">Login</a>
+          </button>
+          <button class="btn btn-outline-success bg-success  me-3" type="submit">
+            <a href="" class="text-warning">Register</a>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="header container row w-100 mx-auto mt-5 mb-5" style="background-color: rgb(188, 188, 228);">
+    <div class="header__title col-md-6 lh-lg">
+      <h1 style="height: 300px; font-weight: bolder; font-size: 100px;">Learn more and success the result</h1>
+    </div>
+    <div class="header__subtitle col-md-6 lh-lg mt-4" style="height: 300px;">
+      <p class="header__subtitle--box bg-white text-primary ms-0 ps-3 w-50">- The best E-learning Platform</p>
+      <p class="header__subtitle--text text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.</p>
+      <button class="bg-primary text-white font-weight mx-auto w-25 rounded"><a class="text-white"
+          style="text-decoration: none;" href="">Show all Course</a></button>
+    </div>
+  </div>
+  <div class="container row mt-3 mx-auto px-0">
+    <div class="col-10 mx-0 px-0">
+      <img class="px-0 w-100 ms-0 rounded" src="images/online-course-blog-header.jpg" alt="">
+    </div>
+    <div class="col-2 ">
+      <div class="card mt-3 border-0 text-center">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-primary border-0" style="background-color: rgb(188, 188, 228);">
+            <h2>15+ </h2>
+          </li>
+          <li class="list-group-item mx-auto border-0" style="background-color: rgb(188, 188, 228);">Total branches
+            opened in last year</li>
+          <li class="list-group-item" style="background-color: rgb(188, 188, 228);">
+            <a href=""><button class="text-danger bg-warning border-0 rounded">Branch Locate</button></a>
+          </li>
+        </ul>
+      </div>
+      <div class="card mt-5 border-0 text-center">
+        <ul class="list-group list-group-flush ">
+          <li class="list-group-item text-primary border-0" style="background-color: rgb(188, 188, 228);">
+            <h2>5k+ </h2>
+          </li>
+          <li class="list-group-item mx-auto border-0" style="background-color: rgb(188, 188, 228);">New students in
+            last 30 days</li>
+          <li class="list-group-item" style="background-color: rgb(188, 188, 228);">A third item</li>
+        </ul>
+      </div>
+      <div class="card mt-5 border-0 text-center">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-primary border-0" style="background-color: rgb(188, 188, 228);">
+            <h2>15k+ </h2>
+          </li>
+          <li class="list-group-item mx-auto border-0" style="background-color: rgb(188, 188, 228);">New students in
+            last 3 months</li>
+          <li class="list-group-item" style="background-color: rgb(188, 188, 228);">A third item</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h1 class="features-text mx-auto text-center fw-bolder mt-5">Our Featured Courses </h1>
+  <p class="features-subs mx-auto text-center text-white fw-bolder">Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. </p>
+  <div class="features container mt-5 w-100 mx-auto" style="background-color: rgb(188, 188, 228);">
+    <div class="features__group row mt-5 mx-auto w-100">
+      <div class="features__card col-md-4 mx-0 px-0">
+        <div class="features__card__list card bg-success text-dark bg-opacity-10 mx-2">
+          <img src="images/html course.jpg" class="card-img-top px-2 pt-2" alt="..."
+            style="display: block; border-radius: 20px;">
+          <div class="features__course card-body border-0">
+            <h5 class="features__course--content card-title text-center fs-5 text-success">HTML basic</h5>
+            <p class="features__course--text card-text fw-bolder text-center">Become a development designer be with HTML
+            </p>
+          </div>
+          <div class="features__card--content container row mx-auto w-100">
+            <nav class="features__card--lesson col-md-6 text-white float-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+              </svg> 20 lessons
+            </nav>
+            <nav class="features__card--volume col-md-6 float-end text-primary fw-bolder">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-plus" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                <path fill-rule="evenodd"
+                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+              </svg> 237 Students
+            </nav>
+          </div>
+          <div class="features__card--evalution card-body container row w-100 mt-2">
+            <div class="card__eval col-md-6 float-start ps-0">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              5.0
+            </div>
+            <div class="card__link--content col-md-6 float-end pe-0">
+              <a href="" class="border-0 text-dark"><i class="bi bi-arrow-right-circle-fill float-end pe-0"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features__card col-md-4 mx-0 px-0">
+        <div class="features__card__list card bg-success text-dark bg-opacity-10 mx-2">
+          <img src="images/js_course.jpg" class="card-img-top px-2 pt-2" alt="..."
+            style="display: block; border-radius: 20px;">
+          <div class="features__course card-body border-0">
+            <h5 class="features__course--content card-title text-center fs-5 text-success">JavaScript Crash Course</h5>
+            <p class="features__course--text card-text fw-bolder text-center">Absolute Beginners. Java Programing A-Z
+              fully classes with full task</p>
+          </div>
+          <div class="features__card--content container row mx-auto w-100">
+            <nav class="features__card--lesson col-md-6 text-white float-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+              </svg> 20 lessons
+            </nav>
+            <nav class="features__card--volume col-md-6 float-end text-primary fw-bolder">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-plus" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                <path fill-rule="evenodd"
+                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+              </svg> 237 Students
+            </nav>
+          </div>
+          <div class="features__card--evalution card-body container row w-100 mt-2">
+            <div class="card__eval col-md-6 float-start ps-0">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              5.0
+            </div>
+            <div class="card__link--content col-md-6 float-end pe-0">
+              <a href="" class="border-0 text-dark"><i class="bi bi-arrow-right-circle-fill float-end pe-0"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features__card col-md-4 mx-0 px-0">
+        <div class="features__card__list card bg-success text-dark bg-opacity-10 mx-2">
+          <img src="images/python_course.png" class="card-img-top px-2 pt-2" alt="..."
+            style="display: block; border-radius: 20px; height: 231.75px;">
+          <div class="features__course card-body border-0">
+            <h5 class="features__course--content card-title text-center fs-5 text-success">Python Course</h5>
+            <p class="features__course--text card-text fw-bolder text-center"> It has efficient high-level data
+              structures and a simple but effective approach to ...</p>
+          </div>
+          <div class="features__card--content container row mx-auto w-100">
+            <nav class="features__card--lesson col-md-6 text-white float-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+              </svg> 20 lessons
+            </nav>
+            <nav class="features__card--volume col-md-6 float-end text-primary fw-bolder">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-plus" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                <path fill-rule="evenodd"
+                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+              </svg> 237 Students
+            </nav>
+          </div>
+          <div class="features__card--evalution card-body container row w-100 mt-2">
+            <div class="card__eval col-md-6 float-start ps-0">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              5.0
+            </div>
+            <div class="card__link--content col-md-6 float-end pe-0">
+              <a href="" class="border-0 text-dark"><i class="bi bi-arrow-right-circle-fill float-end pe-0"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features__group row mt-5 mx-auto w-100">
+      <div class="features__card col-md-4 mx-0 px-0">
+        <div class="features__card__list card bg-success text-dark bg-opacity-10 mx-2">
+          <img src="images/C_plus_plus.jpg" class="card-img-top px-2 pt-2" alt="..."
+            style="display: block; border-radius: 20px; height: 231.75px;">
+          <div class="features__course card-body border-0">
+            <h5 class="features__course--content card-title text-center fs-5 text-success">C Plus Plus C++</h5>
+            <p class="features__course--text card-text fw-bolder text-center">General-purpose programming language
+              created by Danish computer scientist Bjarne Stroustrup as an extension of the C programming language</p>
+          </div>
+          <div class="features__card--content container row mx-auto w-100">
+            <nav class="features__card--lesson col-md-6 text-white float-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+              </svg> 20 lessons
+            </nav>
+            <nav class="features__card--volume col-md-6 float-end text-primary fw-bolder">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-plus" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                <path fill-rule="evenodd"
+                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+              </svg> 237 Students
+            </nav>
+          </div>
+          <div class="features__card--evalution card-body container row w-100 mt-2">
+            <div class="card__eval col-md-6 float-start ps-0">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              5.0
+            </div>
+            <div class="card__link--content col-md-6 float-end pe-0">
+              <a href="" class="border-0 text-dark"><i class="bi bi-arrow-right-circle-fill float-end pe-0"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features__card col-md-4 mx-0 px-0">
+        <div class="features__card__list card bg-success text-dark bg-opacity-10 mx-2">
+          <img src="images/php_course.jpg" class="card-img-top px-2 pt-2" alt="..."
+            style="display: block; border-radius: 20px; height: 231.75px;">
+          <div class="features__course card-body border-0">
+            <h5 class="features__course--content card-title text-center fs-5 text-success">PHP Course</h5>
+            <p class="features__course--text card-text fw-bolder text-center">General-purpose scripting language geared
+              toward web development.</p>
+          </div>
+          <div class="features__card--content container row mx-auto w-100">
+            <nav class="features__card--lesson col-md-6 text-white float-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+              </svg> 20 lessons
+            </nav>
+            <nav class="features__card--volume col-md-6 float-end text-primary fw-bolder">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-plus" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                <path fill-rule="evenodd"
+                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+              </svg> 237 Students
+            </nav>
+          </div>
+          <div class="features__card--evalution card-body container row w-100 mt-2">
+            <div class="card__eval col-md-6 float-start ps-0">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              5.0
+            </div>
+            <div class="card__link--content col-md-6 float-end pe-0">
+              <a href="" class="border-0 text-dark"><i class="bi bi-arrow-right-circle-fill float-end pe-0"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features__card col-md-4 mx-0 px-0">
+
+        <div class="features__card__list card bg-success text-dark bg-opacity-10 mx-2">
+          <img src="images/swift_course.jpg" class="card-img-top px-2 pt-2" alt="..."
+            style="display: block; border-radius: 20px; height: 231.75px;">
+          <div class="features__course card-body border-0">
+            <h5 class="features__course--content card-title text-center fs-5 text-success">Swift Course</h5>
+            <p class="features__course--text card-text fw-bolder text-center">General-purpose, multi-paradigm, compiled
+              programming language developed by Apple Inc. and the open-source community</p>
+          </div>
+          <div class="features__card--content container row mx-auto w-100">
+            <nav class="features__card--lesson col-md-6 text-white float-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+              </svg> 20 lessons
+            </nav>
+            <nav class="features__card--volume col-md-6 float-end text-primary fw-bolder">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-plus" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                <path fill-rule="evenodd"
+                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+              </svg> 237 Students
+            </nav>
+          </div>
+          <div class="features__card--evalution card-body container row w-100 mt-2">
+            <div class="card__eval col-md-6 float-start ps-0">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              5.0
+            </div>
+            <div class="card__link--content col-md-6 float-end pe-0">
+              <a href="" class="border-0 text-dark"><i class="bi bi-arrow-right-circle-fill float-end pe-0"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

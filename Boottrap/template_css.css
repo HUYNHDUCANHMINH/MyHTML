@@ -1,0 +1,6 @@
+.features__card__list:hover {
+    transition: transform .5s;
+    cursor: pointer;
+    transform: translateX(10px) translateY(10px);
+    opacity: 0.6;
+}
