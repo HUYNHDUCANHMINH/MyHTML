@@ -3,4 +3,8 @@
     cursor: pointer;
     transform: translateX(10px) translateY(10px);
     opacity: 0.6;
+    
+}
+.foot__link--social_network i:hover {
+    color: aqua;
 }
