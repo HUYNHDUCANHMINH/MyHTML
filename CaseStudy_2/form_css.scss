@@ -1,0 +1,105 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#form {
+    form {
+        p {
+            color: blue;
+            text-align: left;
+        }
+
+        h3 {
+            font-weight: bolder;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        button {
+            color: white;
+            font-weight: bolder;
+
+            a {
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+
+// footer   
+.footer {
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer__company {
+    img {
+        margin-bottom: 40px;
+    }
+    p {
+        color: aliceblue;
+    }
+}
+
+// justify-content: space-around;
+.footer__link--special {
+    img {
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: white;
+        font-weight: bolder;
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(240, 229, 229);
+        }
+    }
+}
+
+.footer__link--useful {
+    a {
+        text-decoration: none;
+        color: rgb(119, 114, 114);
+    }
+}
+
+.footer__link__item {
+    ul {
+        li {
+            list-style-type: none;
+            display: inline-block;
+
+            i {
+                font-size: 30px;
+                margin-right: 20px;
+            }
+        }
+
+        li i:hover {
+            background-color: aqua;
+        }
+    }
+
+    div {
+        p {
+            color: beige;
+            font-size: 2px;
+        }
+    }
+}
+
+.footer__link--copyright {
+    div {
+        p {
+            font-size: 2mm;
+        }
+    }
+}

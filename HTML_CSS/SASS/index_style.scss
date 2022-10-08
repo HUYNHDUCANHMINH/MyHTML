@@ -1,0 +1,57 @@
+$fontstack: 'Roboto', sans-serif;
+$fontsize: 20px;
+$primary: lightpink;
+$primary-dark: darken($primary, 50%);
+
+#container {
+    font-family: $fontstack;
+    font-size: $fontsize;
+    max-width: 800px;
+    margin: auto;
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        justify-content: space-around;
+        
+        
+        li {
+            background-color: $primary;
+            border: 2px solid $primary-dark;
+            color: $primary-dark;
+            width: 100%;
+            transition: 1s;
+            height: 50px;
+            text-align: center;
+
+            a {
+                color: $primary-dark;
+                text-decoration: none;
+            }
+        }
+
+        li:hover {
+            background-color: $primary-dark;
+
+            a {
+                font-weight: bold;
+                color: $primary;
+            }
+        }
+    }
+
+    h1 {
+        color: $primary;
+    }
+}
+
+@media screen and (max-width:649px) {
+    #container {
+        nav {
+            ul {
+                flex-wrap: wrap;
+            }
+        }
+    }    
+}

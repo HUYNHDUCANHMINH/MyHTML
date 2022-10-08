@@ -1,0 +1,19 @@
+div {
+  background-color: aqua;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+div h1 {
+  color: darkslategray;
+  font-weight: bolder;
+}
+div p {
+  color: darkslategray;
+}
+div button {
+  color: darkslategray;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

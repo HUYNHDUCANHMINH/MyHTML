@@ -1,0 +1,26 @@
+@media screen and (max-width:768px) {
+    #banner {
+        width: 100%;
+    }
+    #sideNav {
+        width: 100%;
+    }
+    #feature {
+        width: 100%;
+    }
+    .title-text-containner {
+        width: 100%;
+    }
+    .containner-item1, .containner-item2, .containner-item3 {
+        width: 100%;
+    }
+    #footer {
+        width: 100%;
+    }
+    #leftside-logo nav a img{
+        width: 50%;
+    }
+    #grid-container {
+        width: 50%;
+    }
+}

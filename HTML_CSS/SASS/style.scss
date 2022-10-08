@@ -1,0 +1,28 @@
+$main-color: darkslategray;
+$second-color: aqua;
+
+@mixin common-style {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+}
+
+div {
+    background-color: $second-color;
+    @include common-style();
+
+
+    h1 {
+    color: $main-color;
+    font-weight: bolder;
+    }
+
+    p {
+    color: $main-color;
+    }
+
+    button {
+    color: $main-color;
+    @include common-style();
+    }
+}

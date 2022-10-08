@@ -1,0 +1,80 @@
+#menubar{
+    height: 30px;
+    width: 100%;
+    /* margin: 0 5px; */
+    background-color: #000000;
+    font-size: 12px;
+}
+#menubar ul, #menubar li{
+    padding:0;
+    margin:0;
+}
+#menubar li{
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+#menubar li a {
+    width:150px;
+    height: 30px;
+    display: inline-block;
+    text-decoration:none;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#menubar ul li a{
+    width: 200px;
+    text-align: center;
+} 
+#menubar ul ul li a{
+    width: 180px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.hidden_1{
+    background-color: rgb(18, 77, 57);
+    animation-name: example1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes example1 {
+    from {background-color: blue;}
+    to {background-color: rgb(20, 20, 18);}
+}
+.hidden_2{
+    background-color: rgb(51, 131, 131);
+    animation-name: example3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes example3 {
+    from {background-color: rgb(4, 126, 45);}
+    to {background-color: rgb(20, 20, 18);}
+}
+.hidden_3 {
+    background-color: rgb(114, 77, 32);
+    animation-name: example2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes example2 {
+    from {background-color: rgb(105, 104, 5);}
+    to {background-color: rgb(20, 20, 18);}
+}
+
+#menubar li a:hover{
+     background-color: red;
+}
+#menubar ul ul{
+    position: absolute;
+    top: 30px;
+    /* left: 15px; */
+    visibility: hidden;
+}
+#menubar ul li:hover ul {
+    visibility: visible;
+}
