@@ -1,0 +1,89 @@
+%img {
+    transition: all .9s ease;
+    border-radius: 10px;
+}
+
+%img_scale {
+    transform: scale(1.11);
+}
+
+.carousel__item {
+    div {
+        height: 350px;
+
+        img {
+            width: 379px;
+            height: 270.72px;
+            @extend %img;
+        }
+
+        h5 {
+            font-size: 18px;
+            color: azure;
+        }
+    }
+
+    img:hover {
+        @extend %img_scale
+    }
+}
+
+.carousel__button {
+    width: 50px;
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+%animation {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+    @keyframes example {
+        from {
+            top: 0px;
+        }
+    
+        to {
+            top: 500px;
+        }
+    }
+}
+
+.content__left {
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(9, 83, 2), rgba(17, 0, 0, 0));
+    div {
+        margin: 30% 50px;
+        width: 200px;
+        flex-wrap: wrap;
+        @extend %animation
+    }    
+}
+.content__right {
+    text-align: center;
+    background: linear-gradient(to top, rgb(9, 82, 3), rgba(17, 0, 0, 0));
+
+    div {
+        margin: 30% 50px;
+        width: 200px;
+        flex-wrap: wrap;
+        position: relative;
+        animation-name: example1;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes example1 {
+    from {
+        top: 500px;
+    }
+
+    to {
+        top: 0px;
+    }
+}

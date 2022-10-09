@@ -4,32 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Career</title>
+  <title>Contact</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-  <link rel="stylesheet" href="form_css.css">
+  <link rel="stylesheet" href="contact.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <style>
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background-image: url(images/TheGuardian2MB.png);
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+
   </style>
 </head>
 
 <body>
   <!-- header -->
-  <nav name="top" id="top" class="navbar navbar-expand-lg bg-dark w-100 px-0" style="position: fixed ; z-index: 100; top:0">
+  <nav class="navbar navbar-expand-lg bg-dark w-100 px-0" style="position: fixed ;z-index: 5; top:0">
     <div class="container-fluid text-white gx-5 text-center">
       <a class="navbar-brand" href="Home.html" target="_blank"><img src="images/logo-aizawa.png.crdownload" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -97,7 +86,7 @@
             <a class="animation nav-link text-white" href="#">ONLINE SHOP</a>
           </li>
           <li class="nav-item me-2">
-            <a class="nav-link text-white" href="contact.html" target="_blank">お問い合わせ</a>
+            <a class="nav-link text-white" href="#">お問い合わせ</a>
           </li>
           <li class="nav-item me-2">
             <a class="nav-link" href="#"><img src="images/instagram.jpg"
@@ -109,7 +98,7 @@
           </li>
           <li class="nav-item ms-5 d-flex ">
             <button class="btn btn-outline-warning text-danger fw-bolder" type="submit">
-              <a href="career.html">Carrier
+              <a href="form.html" target="_blank">Carrier
                 採用情報</a> </button>
           </li>
         </ul>
@@ -121,103 +110,50 @@
     </div>
   </nav>
   <!-- content -->
-  <div class="content mx-0 px-0">
-    <div class="content__president mx-0 px-0">
-      <img class="president__img mx-0 px-0 " src="images/president.webp" alt="">
-      <div class="president__profile" style="position:absolute ; top: 80px; left: 50px; bottom: 80px; ">
-        <h1 style="font-size:80px">目の前の仕事に</h1>
-        <h1 style="font-size:80px">忠実であれ</h1><br>
-        <h5 style="padding-left: 20px;">會澤高圧コンクリート株式会社</h5>
-        <h5 style="padding-left: 20px;">代表取締役社長</h5><br>
-        <h3 style="font-size:80px">會 澤 祥 弘</h3>
-      </div>
-    </div>
-    <!--messeger  -->
-    <div class="content__messenger bg-light mx-0 px-0">
-      <h3 style="color:lightblue ; margin-left: 600px; margin-right: 600px; padding-top: 20px;">代表メッセージ</h3>
-      <h2 style="margin-left: 600px; margin-right: 600px; margin-top: 20px;">人生とはご縁の連鎖</h2>
-      <p style="margin-left: 600px; margin-right: 600px; margin-top: 20px;">
-        目の前の仕事に忠実であれ。これが基本です。確かに仕事は選べます。しかし、仕事はひとりでするものではないので、上司や部下や仲間やパートナーが少なからず存在するようになります。目の前の仕事が面白いかというとかなりの確率でそうではありません。若者とは、自らの存在価値を過大評価する生き物なので、多くの若者は目の前の仕事を「オレにふさわしくない」と過小評価してしまいます。しかし、ご縁があって目の前に現れたしょーもない仕事にどう向き合うかで、君の人生のすべては決まっていきます。目の前に訪れた仕事を真正面から受け止め、それを全身全霊で前に転がせる人間だけが次のご縁をいただけます。人生とはご縁の連鎖なのです。いただいたご縁を、御託を並べてスルーパスする奴にだけはならないでほしいです。
-      </p>
-      <button class="bg-dark rounded mb-3 text-success lh-lg"
-        style="margin-left: 800px; margin-right: 800px;">会社案内パンフレット</button>
-    </div>
-    <!-- space blank -->
-    <div style="height:750px;"></div>
-    <!-- form -->
-    <div id="form" class="h-100 px-5 bg-light text-center">
-      <h1 class="pt-3">興味を持たれた方へ</h1>
-      <h5>当社の代表と</h5>
-      <h5>リモートで</h5>
-      <h5 class="mb-3">直接、対話してみませんか?</h5>
-      <!-- form example -->
-      <form class="w-50 mx-auto ">
-        <p>エントリー資格</p>
-        <p>・1991年4月以降に生まれた方</p>
-        <h3>【簡易エントリー】</h3>
-        <!-- name -->
-        <div class="container row w-100 px-0 mx-0 bg-primary bg-opacity-10">
-          <div class="col-md-6 ms-0 ps-0">
-            <label class="form-label float-start">性 <span style="color: red">*</span></label>
-            <input type="name" class="form-control lh-lg " required placeholder="Bootstrap Account">
-          </div>
-          <div class="col-md-6 me-0 pe-0">
-            <label class="form-label float-start">名 <span style="color: red">*</span></label>
-            <input type="name" class="form-control lh-lg " required placeholder="Bootstrap Account">
-          </div>
+  <div class="container row w-100 mt-5 mx-auto px-0 h-100">
+    <div class="form__left col-1 h-100 mx-0 px-0"></div>
+    <div class="form__contact col-10 h-100 px-5 mx-0">
+      <h1 class="mx-auto text-center text-white mt-3">Contact</h1>
+      <form>
+        <div class="mb-3 ">
+          <label class="form-label text-white fw-bolder ">Company Name 会社名</label>
+          <input type="name" class="form-control lh-lg bg-light bg-opacity-10 border-0" required
+            placeholder="Bootstrap Account">
         </div>
-        <div class="container row w-100 px-0 mx-0 mt-3 bg-primary bg-opacity-10">
-          <div class="col-md-6 ms-0 ps-0">
-            <label class="form-label float-start">性　よみがな <span style="color: red">*</span></label>
-            <input type="name" class="form-control lh-lg " required placeholder="Bootstrap Account">
-          </div>
-          <div class="col-md-6 me-0 pe-0">
-            <label class="form-label float-start">名 よみがな<span style="color: red">*</span></label>
-            <input type="name" class="form-control lh-lg " required placeholder="Bootstrap Account">
-          </div>
+        <div class="mb-3 ">
+          <label class="form-label text-white fw-bolder ">Full name　氏名</label>
+          <input type="name" class="form-control lh-lg bg-light bg-opacity-10 border-0" required
+            placeholder="Bootstrap Account">
         </div>
-        <!-- email -->
-        <div class="mb-3 mt-3 bg-success bg-opacity-10">
-          <label for="exampleInputEmail1" class="form-label float-start">Email address</label>
-          <input type="email" class="form-control lh-lg " id="exampleInputEmail1" aria-describedby="emailHelp" required
-            placeholder="name@example.com">
-          <div id="emailHelp" class="form-text text-warning fs-5">We'll never share your email with anyone else.</div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-white fw-bolder">Email address　メールアドレス</label>
+          <input type="email" class="form-control lh-lg bg-light bg-opacity-10 border-0" id="exampleInputEmail1"
+            aria-describedby="emailHelp" required placeholder="name@example.com">
+          <div id="emailHelp" class="form-text text-warning">We'll never share your email with anyone else.</div>
         </div>
-        <!-- career select -->
-        <p>希望する職種（※複数回答可</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label float-start" for="flexCheckDefault">
-            基礎研究/商品開発/デザイン
-          </label>
+        <div class="mb-3">
+          <label class="form-label text-white fw-bolder">Username　ユーザー名</label>
+          <input type="text" class="form-control lh-lg bg-light bg-opacity-10 border-0" required
+            placeholder="at least five characters">
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-          <label class="form-check-label float-start" for="flexCheckChecked">
-            生産技術/品質保証/設計管理/施工管理/ロジスティクス
-          </label>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label text-white fw-bolder">Content お問合せ内容</label>
+          <textarea name="" id="" cols="30" rows="5" class=" form-control lh-lg bg-light bg-opacity-50 text-black border-0"
+            required placeholder="at least 50 characters"></textarea>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-          <label class="form-check-label float-start" for="flexCheckChecked">
-            フィールドマーケティング/デジタルマーケティング
-          </label>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input bg-light bg-opacity-10 " id="exampleCheck1" required>
+          <label class="form-check-label text-white fw-bolder" for="exampleCheck1">I argee to the <a href=""
+              style="color:red">Term of Users</a></label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-          <label class="form-check-label float-start" for="flexCheckChecked">
-            経営管理/経営企画/ESD/SDGs
-          </label>
-        </div>
-        <p>メッセージ（100文字以内）</p>
-        <textarea name="text" id="" class="w-100 rounded" rows="10"></textarea><br>
-        <button type="submit" class="btn btn-primary mx-auto mb-3 mt-3"><a href="" style="color:white">Send
-            送信</a></button>
+        <button type="submit" class="btn btn-primary bg-light bg-opacity-10 mb-5"
+          style="margin-left: 50%;">Submit</button>
       </form>
     </div>
+    <div class="col-1"></div>
   </div>
   <!-- footer -->
-  <div class="footer container-fluid w-100 row bg-black mx-0 px-0">
+  <div class="footer w-100 container-fluid row bg-black mx-0 px-0">
     <div class=" footer__company col-md-3 float-start mt-5 ms-4">
       <img src="images/AIZAWALOGOwhite.webp" alt="">
       <p>會澤高圧コンクリート株式会社</p>
@@ -245,7 +181,7 @@
     <div class="footer__link__item col-md-3 float-start mt-5">
       <ul>
         <li><i class="fa-brands fa-square-twitter text-white"></i></li>
-        <li><i class="fa-brands fa-youtube  text-white" ></i></li>
+        <li><i class="fa-brands fa-youtube  text-white"></i></li>
         <li><i class="fa-brands fa-square-instagram  text-white"></i></li>
       </ul>
       <div class="footer__link--copyright ms-5">
@@ -253,10 +189,9 @@
         <p>by AIZAWA Concrete Corporation</p>
         <p>with Wix.com</p>
       </div>
-      
     </div>
-
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
@@ -269,7 +204,7 @@
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
         // Prevent default anchor click behavior
-        event.preventDefault();
+        event.preventDefault(); 
 
         // Store hash
         var hash = this.hash;

@@ -5,246 +5,397 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home (casestudy 2)</title>
-    <link rel="stylesheet" href="news_style.css">
+    <title>News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
         </script>
-    <style>
-        ul li {
-            list-style-type: none;
-            font-weight: bolder;
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="news.css">
+
 </head>
 
 <body>
-    <header style="position: sticky ; top:0; left: 0; right: 0;">
-        <nav class="navbar navbar-expand-lg bg-dark mb-2 ms-1 me-1" >
-            <div class="container-fluid text-white gx-5 text-center">
-                <a class="navbar-brand" href="#"><img src="images/logo-aizawa.png.crdownload" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item me-2">
-                            <a class="nav-link active text-white" aria-current="page" href="#">News 新着情報</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link text-white" href="#">About Us 会社概要</a>
-                        </li>
-                        <li class="nav-item me-2 dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Business 事業
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li class="dropdown-item dropdown dropend">
-                                    <a class="nav-item nav-link dropdown-toggle text-white" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Business 事業
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="nav-item nav-link dropdown-toggle text-white" href="#"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            </a>
-                                        </li>
-                                        <li><a href="#" class="dropdown-item">生コン・プレキャスト・基礎地盤・ハウジング</a></li>
-                                        <li><a href="#" class="dropdown-item">プレキャスト・基礎地盤・ハウジング</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">AAA エンジンドロン</a></li>
-                                <li><a class="dropdown-item" href="#">AICE」AIコンクリートエンジニア</a></li>
-                                <li><a class="dropdown-item" href="#">AAA エンジンドロン</a></li>
-                                <li><a class="dropdown-item" href="#">「BASILISK」自己治癒コンクリート</a></li>
-                                <li><a class="dropdown-item" href="#">c3dp コンクリート3Dプリント エンジンドロン</a></li>
-                                <li><a class="dropdown-item" href="#">CarbonCure CO2リサイクル</a></li>
-                                <li><a class="dropdown-item" href="#">NetZero 2035 カーボンニュートラル</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item me-2 dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Product 製品紹介
-                            </a>
-                        </li>
-                        <li class="nav-item me-2 dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">事業拠点</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <a class="dropdown-item" href="">Japan</a>
-                                <a class="dropdown-item" href="">Oversea</a>
-                            </ul>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link text-white" href="#">ギャラリー</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="animation nav-link text-white" href="#">ONLINE SHOP</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link text-white" href="#">お問い合わせ</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link" href="#"><img src="images/instagram.jpg"
-                                    style="width:30px; height:30px; border-radius: 10px;" alt=""></a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link" href="#"><img src="images/twitter.png"
-                                    style="width:30px; height:30px; border-radius: 10px;" alt=""></a>
-                        </li>
-                        <li class="nav-item ms-5 d-flex ">
-                            <button class="btn btn-outline-warning text-danger fw-bolder" type="submit">
-                                <a href="form.html" target="_blank">Carrier
-                                    採用情報</a> </button>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="container-fluid text-center w-50">
-        <h1 style="text-align:center; margin: 20px 0;">NEWS 新着情報</h1>
-        <div class="row">
-            <div class="col-4">
-                <div style="border: none;" class="card" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="ER7自己治癒型液体補修材">
-                    <a href=""><img id="img-news" src="images/ケイコン720x480.png" class="card-img-top rounded-4"
-                            alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">『a NET ZEROイニシアティブ協定』締結 會澤高圧とケイコン</h5>
-                        <p class="card-text">『a NET ZEROイニシアティブ協定』締結 會澤高圧とケイコン</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="border: none;" class="card" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="MR3自己治癒型補修モルタル">
-                    <a href=""><img id="img-news" src="images/ケイコン720x480.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">サウジでPC建築展開へ『AL SAEDAN BT Powered by AIZAWA』</h5>
-                        <p class="card-text">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="border: none;" class="card" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="HA (Healing Agent)自己治癒コンクリート材料">
-                    <a href=""><img id="img-news" src="images/ケイコン720x480.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">會澤高圧コンクリート 防災テック市場に本格参入</h5>
-                        <p class="card-text">
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-4">
-                <div style="border: none;" class="card" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="ER7自己治癒型液体補修材">
-                    <a href=""><img id="img-news" src="images/ケイコン720x480.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">『a NET ZEROイニシアティブ協定』締結 會澤高圧とケイコン</h5>
-                        <p class="card-text">『a NET ZEROイニシアティブ協定』締結 會澤高圧とケイコン</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="border: none;" class="card" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="MR3自己治癒型補修モルタル">
-                    <a href=""><img id="img-news" src="images/ケイコン720x480.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">サウジでPC建築展開へ『AL SAEDAN BT Powered by AIZAWA』</h5>
-                        <p class="card-text">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="border: none;" class="card" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="HA (Healing Agent)自己治癒コンクリート材料">
-                    <a href=""><img id="img-news" src="images/ケイコン720x480.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">會澤高圧コンクリート 防災テック市場に本格参入</h5>
-                        <p class="card-text">
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <div style="border: none;" class="card" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="ER7自己治癒型液体補修材">
-                    <a href=""><img id="img-news" src="images/ケイコン720x480.png" class="card-img-top rounded-3"
-                            alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">『a NET ZEROイニシアティブ協定』締結 會澤高圧とケイコン</h5>
-                        <p class="card-text">『a NET ZEROイニシアティブ協定』締結 會澤高圧とケイコン</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="border: none;" class="card" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="MR3自己治癒型補修モルタル">
-                    <a href=""><img id="img-news" src="images/ケイコン720x480.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">サウジでPC建築展開へ『AL SAEDAN BT Powered by AIZAWA』</h5>
-                        <p class="card-text">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div style="border: none;" class="card" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="HA (Healing Agent)自己治癒コンクリート材料">
-                    <a href=""><img id="img-news" src="images/ケイコン720x480.png" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">會澤高圧コンクリート 防災テック市場に本格参入</h5>
-                        <p class="card-text">
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12" style="height:400px">
-                <div class="card text-bg-dark">
-                    <img src="images/" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">PRODUCTS</h4>
-                        <h5 class="card-title">製品紹介></h5>
-                        <p class="card-text">世界へ踏み出すAIZAWAのコンクリート技術。</p>
-                        <p class="card-text">確かな設計力で多様なニーズにお応えします。</p>
+    <nav class="navbar navbar-expand-lg bg-dark mx-0 px-0"
+        style="position: fixed ;z-index: 100; top:0; left: 0; right: 0;">
+        <div class="container-fluid text-white gx-5 text-center">
+            <a class="navbar-brand" href="Home.html" target="_blank"><img src="images/logo-aizawa.png.crdownload" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-2">
+                        <a class="nav-link active text-white" aria-current="page" href="#">News 新着情報</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-white" href="#">About Us 会社概要</a>
+                    </li>
+                    <li class="nav-item me-2 dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Business 事業
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item dropdown dropend">
+                                <a class="nav-item nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Business 事業
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="nav-item nav-link dropdown-toggle text-white" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">生コン・プレキャスト・基礎地盤・ハウジング</a></li>
+                                    <li><a href="#" class="dropdown-item">プレキャスト・基礎地盤・ハウジング</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">AAA エンジンドロン</a></li>
+                            <li><a class="dropdown-item" href="#">AICE」AIコンクリートエンジニア</a></li>
+                            <li><a class="dropdown-item" href="#">AAA エンジンドロン</a></li>
+                            <li><a class="dropdown-item" href="#">「BASILISK」自己治癒コンクリート</a></li>
+                            <li><a class="dropdown-item" href="#">c3dp コンクリート3Dプリント エンジンドロン</a></li>
+                            <li><a class="dropdown-item" href="#">CarbonCure CO2リサイクル</a></li>
+                            <li><a class="dropdown-item" href="#">NetZero 2035 カーボンニュートラル</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2 dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Product 製品紹介
+                        </a>
+                    </li>
+                    <li class="nav-item me-2 dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">事業拠点</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <a class="dropdown-item" href="">Japan</a>
+                            <a class="dropdown-item" href="">Oversea</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-white" href="#">ギャラリー</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="animation nav-link text-white" href="#">ONLINE SHOP</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-white" href="contact.html" target="_blank">お問い合わせ</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#"><img src="images/instagram.jpg"
+                                style="width:30px; height:30px; border-radius: 10px;" alt=""></a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#"><img src="images/twitter.png"
+                                style="width:30px; height:30px; border-radius: 10px;" alt=""></a>
+                    </li>
+                    <li class="nav-item ms-5 d-flex ">
                         <button class="btn btn-outline-warning text-danger fw-bolder" type="submit">
-                            詳しくは　＞
-                        </button>
+                            <a href="form.html" target="_blank">Carrier
+                                採用情報</a> </button>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- content -->
+    <div class="container-fluid row mx-0 px-0">
+        <div class="content__left col-2 text-center mx-0 px-0" style="margin-top: 64px;">
+            <div>
+                <h1>新着情報</h1>
+            </div>
+        </div>
+        <div class="content__carousel container col-8 mx-0 px-0" style="margin-top: 64px;">
+            <div id="carouselExampleIndicators" class="carousel slide text-center pb-5 mx-auto bg-success bg-opacity-75"
+                data-bs-ride="true">
+                <!-- <h3 class="text-center mx-auto px-0 row">NEWS</h3> -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel__item__list carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel__block container row row-cols-3 mx-0 px-0 text-center">
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="ER7自己治癒型液体補修材">
+                                    <a href=""><img id="img-news" src="images/wine.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">コンクリートワインタンク開発普及プロジェクト“よっつめのテロワール”はじまりました</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="MR3自己治癒型補修モルタル">
+                                    <a href=""><img id="img-news" src="images/mikasa.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">洋上風力事業を本格化、グリーンアンモニア製造艦「GAPS」の実証機開発へ WIND EXPO に出展</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="HA (Healing Agent)自己治癒コンクリート材料">
+                                    <a href=""><img id="img-news" src="images/NETIS_720x.webp" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">「Basilisk HA自己治癒コンクリート」国交省NETISに登録 脱炭素化の切り札として普及を加速</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- next news -->
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="ER7自己治癒型液体補修材">
+                                    <a href=""><img id="img-news" src="images/keikon.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">『a NET ZEROイニシアティブ協定』締結 會澤高圧とケイコン</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="MR3自己治癒型補修モルタル">
+                                    <a href=""><img id="img-news" src="images/aizawa_president.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">熱狂の履歴書」に會澤祥弘社長のインタビュー記事が掲載されました。</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="HA (Healing Agent)自己治癒コンクリート材料">
+                                    <a href=""><img id="img-news" src="images/TheGuardian2MB.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">會澤高圧コンクリート 防災テック市場に本格参入</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel__block container row row-cols-3 mx-0 px-0 text-center">
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="ER7自己治癒型液体補修材">
+                                    <a href=""><img id="img-news" src="images/fukushima_rdm.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">研究開発型生産拠点『福島RDMセンター』地鎮祭　浪江町南産業団地にて執行</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="MR3自己治癒型補修モルタル">
+                                    <a href=""><img id="img-news" src="images/TV_show.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">テレビ東京『うちむら見える化TV』で3Dプリンター事業が紹介されました</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="HA (Healing Agent)自己治癒コンクリート材料">
+                                    <a href=""><img id="img-news" src="images/2035_netzero.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">2035年ネットゼロにコミットメント　脱炭素系技術を同業社に包括供与</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- next news -->
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="ER7自己治癒型液体補修材">
+                                    <a href=""><img id="img-news" src="images/arase aizawa.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">防災用500㏄エンジン搭載ドローンと可搬式専用格納庫を浪江町庁舎で初披露</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="MR3自己治癒型補修モルタル">
+                                    <a href=""><img id="img-news" src="images/basilisk_tv_show.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">日テレ『世界一受けたい授業』で自己治癒コンクリート『Basilisk』が紹介されました。</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="HA (Healing Agent)自己治癒コンクリート材料">
+                                    <a href=""><img id="img-news" src="images/synworld.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">アイザワグループ一級建築士事務所ADAAC 都市空間管理DAO「SYNCWORLD™ ENGINE」開発へ
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel__block container row row-cols-3 mx-0 px-0 text-center">
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="ER7自己治癒型液体補修材">
+                                    <a href=""><img id="img-news" src="images/NETIS_720x.webp" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">『a NET ZEROイニシアティブ協定』締結 會澤高圧とケイコン</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="MR3自己治癒型補修モルタル">
+                                    <a href=""><img id="img-news" src="images/wine.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">サウジでPC建築展開へ『AL SAEDAN BT Powered by AIZAWA』</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="HA (Healing Agent)自己治癒コンクリート材料">
+                                    <a href=""><img id="img-news" src="images/wine.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">會澤高圧コンクリート 防災テック市場に本格参入</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- next news -->
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="ER7自己治癒型液体補修材">
+                                    <a href=""><img id="img-news" src="images/NETIS_720x.webp" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">『a NET ZEROイニシアティブ協定』締結 會澤高圧とケイコン</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="MR3自己治癒型補修モルタル">
+                                    <a href=""><img id="img-news" src="images/wine.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">サウジでPC建築展開へ『AL SAEDAN BT Powered by AIZAWA』</h5>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__item col-4 mx-0 px-0">
+                                <div style="border: none;" class="card bg-success bg-opacity-10"
+                                    data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-content="HA (Healing Agent)自己治癒コンクリート材料">
+                                    <a href=""><img id="img-news" src="images/wine.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">會澤高圧コンクリート 防災テック市場に本格参入</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <button class="carousel__button carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="margin-top:700px;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel__button carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="margin-top:700px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="content__right col-2 text-center mx-0 px-0 " style="margin-top: 64px;">
+            <div>
+                <h1>新着情報</h1>
             </div>
         </div>
 
-        <div class="row-4 bs-light"></div>
-        <div class="row-4 bs-light"></div>
-        <div class="row-4 bs-light"></div>
     </div>
+    <!-- footer -->
+    <div class="footer container-fluid w-100 row bg-black mx-0 px-0">
+        <div class=" footer__company col-md-3 float-start mt-5 ms-4">
+            <img src="images/AIZAWALOGOwhite.webp" alt="">
+            <p>會澤高圧コンクリート株式会社</p>
+            <p>〒065-0043</p>
+            <p>北海道札幌市東区苗穂町12丁目1-1</p>
+            <p>TEL : 011-723-6600</p>
+        </div>
+        <div class="footer__link--special col-md-3 float-start mt-5">
+            <img src="images/NETZEROLOGO.webp" alt="">
+            <p><a href="">Special Site 特設サイト</a></p>
+        </div>
+        <div class="footer__link--useful col-md-3 float-start mt-5 mb-4">
+            <div>
+                <a href="#top">Link</a>
+            </div>
+            <a href="Home.html">會澤高圧コンクリート</a><br>
+            <a href="">Concrete Medical Center コンクリートメディカルセンター </a><br>
+            <a href="">Basilisk</a><br>
+            <a href="">AICE</a><br>
+            <a href="">CarbonCure</a><br>
+            <a href="">Micon Technology</a><br>
+            <a href="">VT</a><br>
+            <a href="">ARASE AIZAWA Aerospatial</a><br>
+        </div>
+        <div class="footer__link__item col-md-3 float-start mt-5">
+            <ul>
+                <li><i class="fa-brands fa-square-twitter text-white"></i></li>
+                <li><i class="fa-brands fa-youtube  text-white"></i></li>
+                <li><i class="fa-brands fa-square-instagram  text-white"></i></li>
+            </ul>
+            <div class="footer__link--copyright ms-5">
+                <p>🄬2021</p>
+                <p>by AIZAWA Concrete Corporation</p>
+                <p>with Wix.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!--end script bootstrap -->
 </body>
 
 </html>

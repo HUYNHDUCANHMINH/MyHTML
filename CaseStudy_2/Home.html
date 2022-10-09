@@ -10,15 +10,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <link rel="stylesheet" href="home.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
   <style>
-    html,
+    html {
+       scroll-behavior: smooth;
+    }
     body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
       background-image: url(images/home_background.jpg.crdownload);
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 
 <body>
   <!-- header -->
-  <nav name="top" id="top" class="navbar navbar-expand-lg bg-dark w-100 px-0" style="position:sticky ; top:0">
+  <nav class="navbar navbar-expand-lg bg-dark w-100 px-0" style="position: fixed ;z-index: 5; top:0">
     <div class="container-fluid text-white gx-5 text-center">
       <a class="navbar-brand" href="#"><img src="images/logo-aizawa.png.crdownload" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -39,7 +39,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item me-2">
-            <a class="nav-link active text-white" aria-current="page" href="#">News 新着情報</a>
+            <a class="nav-link active text-white" aria-current="page" href="news.html" target="_blank">News 新着情報</a>
           </li>
           <li class="nav-item me-2">
             <a class="nav-link text-white" href="#">About Us 会社概要</a>
@@ -97,7 +97,7 @@
             <a class="animation nav-link text-white" href="#">ONLINE SHOP</a>
           </li>
           <li class="nav-item me-2">
-            <a class="nav-link text-white" href="#">お問い合わせ</a>
+            <a class="nav-link text-white" href="contact.html" target="_blank">お問い合わせ</a>
           </li>
           <li class="nav-item me-2">
             <a class="nav-link" href="#"><img src="images/instagram.jpg"
@@ -121,8 +121,8 @@
     </div>
   </nav>
   <!-- content -->
-  <div class="content w-100 h-100 mx-0 px-0">
-    <div class="content__slide w-100 text-center rounded mx-0 px-0 bg-white">
+  <div  class="content container-fluid w-100 mx-0 px-0">
+    <div class="content__slide w-100 text-center row rounded mx-0 px-0 bg-white">
       <div id="carouselExampleCaptions" class="carousel slide w-50 mx-auto" data-bs-ride="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -135,9 +135,9 @@
             aria-label="Slide 4"></button>
 
         </div>
-        <div class="carousel-inner">
+        <div class="content__slide__item carousel-inner">
           <div class="carousel-item active">
-            <img src="images/ケイコン720x480.png" class="d-block w-100" alt="...">
+            <img src="images/wine.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>よっつめのテロワール</h5>
               <p>コンクリートワインタンク開発普及プロジェクト“よっつめのテロワール”はじまりました</p>
@@ -176,9 +176,139 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="content__netzero w-100 text-center mx-0 px-0 bg-white">
-        <img style="width: 50% ; height: 300px; border-radius: 10px;" src="images/NET ZERO.png" alt="">
+    </div>
+    <div class="content__netzero row w-100 mx-0 px-0 bg-white ">
+      <img class="mx-auto rounded" style="width: 50% ; height: 280px; border-radius: 10px;" src="images/NET ZERO.png"
+        alt="">
+    </div>
+    <div class="content__news row w-100 mx-0 px-0">
+      <h1>NEWS</h1>
+      <h4>新着情報</h4>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <div id="page_1" class="d-block w-25 mx-auto row col-12 justify-content-center" style="height:150px;">
+            <div style="background-color:aqua; height:50px; width:100%"></div>
+            <div style="background-color:red; height:50px; width:100%"></div>
+            <div style="background-color:blue; height:50px; width:100%"></div>
+          </div>
+          <div class="carousel-item">
+            <div id="page_2" class="d-block w-25 mx-auto row col-12 justify-content-center" style="height:150px">
+              <div style="background-color:aqua; height:50px; width:100%"></div>
+              <div style="background-color:red; height:50px; width:100%"></div>
+              <div style="background-color:blueviolet; height:50px; width:100%"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="page_3" class="w-25 mx-auto row col-12 justify-content-center" style="height:150px;">
+              <div style="background-color:aqua; height:50px; width:100%"></div>
+              <div style="background-color:red; height:50px; width:100%"></div>
+              <div style="background-color:yellow; height:50px; width:100%"></div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#page_1">1</a></li>
+        <li class="page-item"><a class="page-link" href="#page_2">2</a></li>
+        <li class="page-item"><a class="page-link" href="#page_3">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+    <div class="content__news__item container row row-cols-3 w-75 mx-auto px-0 row justify-content-md-center gx-5">
+      <div class="card_item card mx-0 px-0 rounded border-0 me-5 mb-5" style="width: 18rem;">
+        <img src="images/wine.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">コンクリートワインタンク開発普及プロジェクト“よっつめのテロワール”はじまりました</h5>
+          <p class="card-text">2022年9月12日</p>
+        </div>
+      </div>
+      <div class="card_item card mx-0 px-0 rounded border-0 me-5 mb-5" style="width: 18rem;">
+        <img src="images/mikasa.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">グリーンアンモニア製造艦「GAPS」の実証機開発に着手</h5>
+          <p class="card-text">2022年8月30日</p>
+        </div>
+      </div>
+      <div class="card_item card mx-0 px-0 rounded border-0 mb-5 me-5" style="width: 18rem;">
+        <img src="images/NETIS_720x.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">「Basilisk HA自己治癒コンクリート」 国交省NETISに登録</h5>
+          <p class="card-text">2022年8月18日</p>
+        </div>
+      </div>
+      <div class="card_item card mx-0 px-0 rounded border-0 me-5 mb-5" style="width: 18rem;">
+        <img src="images/aizawa_president.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">「熱狂の履歴書」に會澤祥弘社長のインタビュー記事が掲載されました。</h5>
+          <p class="card-text">2022年7月29日</p>
+        </div>
+      </div>
+      <div class="card_item card mx-0 px-0 rounded border-0 me-5 mb-5" style="width: 18rem;">
+        <img src="images/outdoor_home.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">コンクリート3Dプリンタで宿泊施設を国内初 “印刷”</h5>
+          <p class="card-text">2022年7月28日</p>
+        </div>
+      </div>
+      <div class="card_item card mx-0 px-0 rounded border-0 me-5 mb-5" style="width: 18rem;">
+        <img src="images/TV_show.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">テレビ東京『うちむら見える化TV』で当社の3Dプリンター事業が紹介されました！</h5>
+          <p class="card-text">2022年7月22日</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- content product -->
+    <div class="content__product container row mx-auto px-0  w-100 mt-5" >
+      
+      <div class="col-3"></div>
+      <div class="content__product--right col-9 text-center text-white fw-bolder" >
+        <h2 class="text-center" style="margin-top: 200px;">PRODUCTS</h2><br>
+        <h2 class="text-center">製品紹介</h2><br>
+        <p class="text-center">世界へ踏み出すAIZAWAのコンクリート技術。</p>
+        <p class="text-center">確かな設計力で多様なニーズにお応えします。</p><br>
+        <button class="text-center">
+          <a href="product.html">詳しくは　＞</a>    
+        </button>
+      </div>
+    </div>
+    <!-- content garelly -->
+    <div class="content__garelly w-100 mx-0 px-0 ">
+      <h1>GARELLY</h1>
+      <h4>ギャラリー映像</h4>
+      <div class="content__garelly__item w-100 container row row-cols-3 mx-auto px-0 text-center">
+        <div class="garelly__item mb-5">
+          <img src="images/garelly_1.jpg" alt="">
+          <p>ギャラリー映像</p>
+        </div>
+        <div class="garelly__item mb-5">
+          <img src="images/garelly_2.jpg" alt="">
+          <p>施工事例ギャラリー</p>
+        </div>
+        <div class="garelly__item mb-5">
+          <img src="images/garelly_3.jpg" alt="">
+          <p>創立80周年記念祭と</p>
+        </div>
+      </div>
+    </div>
+    <!-- content online shop -->
+    <div class="content__online w-75 mx-auto px-0 text-center bg-success bg-opacity-10 text-white mb-5" style="height:100px">
+      <a href="" style="text-decoration:none; font-weight:bolder"><h1 style="padding-top:10px">ONLINE SHOP</h1></a>
+      <a href="" style="text-decoration:none; font-weight:bolder">オンラインショップ</a>
+    </div>
+    <!-- content contact_question -->
+    <div class="content__contact w-75 mx-auto px-0 text-center bg-primary bg-opacity-50 text-white mb-4" style="height:220px">
+      <h1 style="padding-top:40px">製品に関するご依頼・ご相談はこちらより</h1>
+      <p>下記ページより、メールフォームまたはお電話にてお問い合わせください。</p>
+      <button><a href="contact.html">お問い合わせ</a></button>
     </div>
   </div>
   <!-- footer -->
@@ -220,36 +350,30 @@
       </div>
     </div>
   </div>
-
+  <div id="top-up">
+    <a href="#top">TOP</a>
+  </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
-</body>
-<!-- <script>
-  $(document).ready(function () {
-    // Add smooth scrolling to all links
-    $("a").on('click', function (event) {
 
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('top').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
+  <!-- back top JS -->
+  <script>
+    // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+    var offset = 500;
+    // thời gian di trượt 0.75s ( 1000 = 1s )
+    var duration = 750;
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > offset)
+                $('#top-up').fadeIn(duration); else
+                $('#top-up').fadeOut(duration);
         });
-      } // End if
+        $('#top-up').click(function () {
+            $('body,html').animate({ scrollTop: 0 }, duration);
+        });
     });
-  });
-</script> -->
-
+  </script>
+</body>
 </html>

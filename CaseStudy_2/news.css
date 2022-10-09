@@ -1,0 +1,100 @@
+.carousel__item div img {
+  transition: all 0.9s ease;
+  border-radius: 10px;
+}
+
+.carousel__item img:hover {
+  transform: scale(1.11);
+}
+
+.carousel__item div {
+  height: 350px;
+}
+.carousel__item div img {
+  width: 379px;
+  height: 270.72px;
+}
+.carousel__item div h5 {
+  font-size: 18px;
+  color: azure;
+}
+.carousel__button {
+  width: 50px;
+  font-weight: bolder;
+  font-size: 100px;
+}
+
+.content__left div {
+  position: relative;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 500px;
+  }
+}
+@keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 500px;
+  }
+}
+
+.content__left {
+  text-align: center;
+  background: linear-gradient(to bottom, rgb(9, 83, 2), rgba(17, 0, 0, 0));
+}
+.content__left div {
+  margin: 30% 50px;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+.content__right {
+  text-align: center;
+  background: linear-gradient(to top, rgb(9, 82, 3), rgba(17, 0, 0, 0));
+}
+.content__right div {
+  margin: 30% 50px;
+  width: 200px;
+  flex-wrap: wrap;
+  position: relative;
+  -webkit-animation-name: example1;
+          animation-name: example1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example1 {
+  from {
+    top: 500px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes example1 {
+  from {
+    top: 500px;
+  }
+  to {
+    top: 0px;
+  }
+}/*# sourceMappingURL=news.css.map */

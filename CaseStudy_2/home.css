@@ -2,12 +2,110 @@
   height: 100px;
 }
 
-.content div img {
-  height: 550px;
+.garelly__item img, .content__news__item .card_item img, .content__slide__item div img {
+  transition: all 0.9s ease;
 }
-.content div p {
+
+.garelly__item img:hover, .content__news__item .card_item img:hover, .content__slide__item div img:hover {
+  transform: scale(1.21);
+}
+
+.content__garelly h1,
+.content__garelly h4, .content__news h1,
+.content__news h4 {
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  font-size: 40px;
+  height: 40px;
+  display: block;
+  margin: 20px auto;
+}
+
+.content__contact button, .content__product--right button {
+  border-radius: 10px;
+  background-color: lightgreen;
+  border-color: #116e11;
+  width: 150px;
+}
+
+.content .content__president img {
+  height: 600px;
+}
+.content .content__president p {
   font-size: 20px;
   font-weight: bolder;
+}
+
+.content__slide__item div img {
+  height: 600px;
+}
+.content__news {
+  height: 200px;
+}
+.content__news__item div {
+  transition: transform 0.9s;
+  box-shadow: 0 1px 3px 5px #ecec79;
+}
+.content__news__item .card_item img {
+  height: 191.1px;
+}
+.content__news__item .card_item:hover {
+  opacity: 0.8;
+  transform: translateY(10px) translateX(10px);
+}
+.content__news__item div div p {
+  font-size: 8px;
+  text-align: center;
+}
+
+.content__product {
+  background-image: url(images/product.jpg.crdownload);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.content__product--right {
+  background: linear-gradient(to left, rgb(10, 97, 2), rgba(17, 0, 0, 0));
+}
+.content__product--right button a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.garelly__item {
+  position: relative;
+}
+.garelly__item img {
+  width: 381px;
+  height: 215px;
+}
+.garelly__item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(250, 246, 246);
+}
+
+.content__online:hover {
+  background: linear-gradient(to left, rgb(10, 97, 2), rgba(17, 0, 0, 0));
+}
+
+.content__contact {
+  background: linear-gradient(to left, rgb(1, 27, 75), rgba(17, 0, 0, 0));
+}
+.content__contact button a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+.content__contact button:hover {
+  background: rgb(1, 27, 75);
 }
 
 .footer {
@@ -60,4 +158,51 @@
 
 .footer__link--copyright div p {
   font-size: 2mm;
+}
+
+#top-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9000;
+  width: 70px;
+  height: 70px;
+}
+
+@-webkit-keyframes example2 {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes example2 {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+#top-up a {
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+  display: block;
+  line-height: 70px;
+  font-weight: bolder;
+  font-size: 14px;
+  background-color: #333333;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-animation-name: example2;
+          animation-name: example2;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }/*# sourceMappingURL=home.css.map */

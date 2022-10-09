@@ -1,18 +1,177 @@
-.header { 
+$color : lightgreen;
+$green-dark: darken($color, 50%);
+
+@mixin transform {
+    transition: transform .9s;
+    box-shadow: 0 1px 3px 5px #ecec79;
+}
+
+@mixin hover_img {
+    opacity: 0.8;
+    transform: translateY(10px) translateX(10px);
+}
+
+.header {
     nav {
         height: 100px;
     }
 }
 
+%img {
+    transition: all .9s ease;
+}
+
+%img_scale {
+    transform: scale(1.21);
+}
+
+%h1_h4 {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+}
+
+%button {
+    border-radius: 10px;
+    background-color: $color;
+    $green-dark: darken($color, 50%);
+    border-color: $green-dark;
+    width: 150px;
+}
+
 .content {
-    div {
+    .content__president {
         img {
-            height: 550px;
+            height: 600px;
         }
+
         p {
             font-size: 20px;
             font-weight: bolder;
         }
+    }
+}
+
+.content__slide__item {
+    div img {
+        height: 600px;
+        @extend %img;
+    }
+
+    div img:hover {
+        @extend %img_scale
+    }
+}
+
+.content__news {
+    height: 200px;
+
+    h1,
+    h4 {
+        @extend %h1_h4;
+    }
+}
+
+.content__news__item {
+    div {
+        @include transform;
+    }
+
+    .card_item img {
+        height: 191.1px;
+        @extend %img;
+    }
+
+    .card_item img:hover {
+        @extend %img_scale
+    }
+
+    .card_item:hover {
+        @include hover_img;
+    }
+
+    div div p {
+        font-size: 8px;
+        text-align: center;
+    }
+}
+
+.content__product {
+    background-image: url(images/product.jpg.crdownload);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.content__product--right {
+    background: linear-gradient(to left, rgb(10, 97, 2), rgba(17, 0, 0, 0));
+
+    button {
+        @extend %button;
+
+        a {
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    }
+}
+
+.content__garelly {
+
+    h1,
+    h4 {
+        @extend %h1_h4;
+    }
+}
+
+.garelly__item {
+    position: relative;
+
+    img {
+        @extend %img;
+        width: 381px;
+        height: 215px;
+    }
+
+    img:hover {
+        @extend %img_scale
+    }
+
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        font-weight: bolder;
+        color: rgb(250, 246, 246);
+    }
+}
+
+.content__online:hover {
+    background: linear-gradient(to left, rgb(10, 97, 2), rgba(17, 0, 0, 0));
+}
+
+.content__contact {
+    background: linear-gradient(to left, rgb(1, 27, 75), rgba(17, 0, 0, 0));
+
+    button {
+        @extend %button;
+
+        a {
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    }
+
+    button:hover {
+        background: rgb(1, 27, 75);
     }
 }
 
@@ -27,6 +186,7 @@
     img {
         margin-bottom: 40px;
     }
+
     p {
         color: aliceblue;
     }
@@ -90,4 +250,41 @@
             font-size: 2mm;
         }
     }
+}
+
+// back to top
+#top-up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9000;
+    width: 70px;
+    height: 70px;
+}
+
+@keyframes example2 {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+#top-up a {
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    display: block;
+    line-height: 70px;
+    font-weight: bolder;
+    font-size: 14px;
+    background-color: #333333;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    text-align: center;
+    animation-name: example2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
