@@ -10,8 +10,7 @@
   transform: scale(1.21);
 }
 
-.content__garelly h1,
-.content__garelly h4, .content__news h1,
+.content__garelly h1, .content__garelly h4, .content__news h1,
 .content__news h4 {
   text-align: center;
   color: black;
@@ -163,7 +162,7 @@
 #top-up {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 100px;
   z-index: 9000;
   width: 70px;
   height: 70px;
